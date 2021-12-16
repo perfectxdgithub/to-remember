@@ -1,0 +1,56 @@
+{
+  "name": "to-remember",
+  "version": "1.0.0",
+  "description": "A learning tool used to record knowledge and aid memorization",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "webpack serve --progress --hot --config webpack.config.js",
+    "devtest": "webpack serve --config webpack.test.js",
+    "dev2": "webpack serve --progress --hot --inline --config webpack.config.js",
+    "test": "test",
+    "check-types": "tsc --watch"
+  },
+  "keywords": [
+    "memorize",
+    "recite",
+    "study",
+    "take",
+    "notes"
+  ],
+  "author": "xiedong",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "@babel/runtime-corejs3": "^7.16.3",
+    "vue": "^3.2.24",
+    "vue-router": "^3.5.3",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "@vue/compiler-sfc": "^3.2.24",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "fork-ts-checker-webpack-plugin": "^6.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.2",
+    "vue-loader": "^15.9.8",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
