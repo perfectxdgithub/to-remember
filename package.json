@@ -7,8 +7,9 @@
     "dev": "webpack serve --progress --hot --config webpack.config.js",
     "devtest": "webpack serve --config webpack.test.js",
     "dev2": "webpack serve --progress --hot --inline --config webpack.config.js",
-    "test": "test",
-    "check-types": "tsc --watch"
+    "check-types": "tsc --watch",
+    "prepare": "husky install",
+    "test": "eslint --fix ./src --ext .vue,.js,.ts"
   },
   "keywords": [
     "memorize",
@@ -45,6 +46,7 @@
     "eslint-plugin-vue": "^8.2.0",
     "fork-ts-checker-webpack-plugin": "^6.5.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
     "prettier": "^2.5.1",
     "typescript": "^4.5.2",
     "vue-loader": "^15.9.8",
