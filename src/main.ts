@@ -1,4 +1,4 @@
-const str = 'test1'
+const str = 'test1d'
 console.log('xxxxxx:%d', str)
 const count = 5
 console.log('count: %d', count)
