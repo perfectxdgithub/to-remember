@@ -1,5 +1,6 @@
-const path = require('path')
+// const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 module.exports = {
   entry: './src/main.ts',
@@ -19,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        // 正则匹配后缀.ts .tsx, 使用ts-loader转换，不包括node_modules的文件
+        // 正则匹配后缀.ts .tsx, 使用babel-loader转换，不包括node_modules的文件
         test: /\.tsx?$/,
         exclude: /node_modules/,
         use: [
@@ -33,6 +34,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
-    })
+    }),
+    new ForkTsCheckerWebpackPlugin()
   ]
 }
