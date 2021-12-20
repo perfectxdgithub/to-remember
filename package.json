@@ -9,7 +9,8 @@
     "dev2": "webpack serve --progress --hot --inline --config webpack.config.js",
     "check-types": "tsc --watch",
     "prepare": "husky install",
-    "test": "eslint --fix ./src --ext .vue,.js,.ts"
+    "test": "eslint --fix ./src --ext .vue,.js,.ts",
+    "commit": "cz"
   },
   "keywords": [
     "memorize",
@@ -40,6 +41,7 @@
     "@typescript-eslint/parser": "^5.7.0",
     "@vue/compiler-sfc": "^3.2.24",
     "babel-loader": "^8.2.3",
+    "commitizen": "^4.2.4",
     "core-js": "^3.20.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",

@@ -16,6 +16,7 @@ module.exports = {
   ],
 
   scopes: [
+    { value:'workflow', name: 'workflow' },
     { value:'components', name: '组件相关' },
     { value:'hooks', name: 'hook相关' },
     { value:'utils', name: 'utils相关' },
