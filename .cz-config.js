@@ -42,7 +42,6 @@ module.exports = {
   messages: {
     type: "\n请确保本地提交遵循约定式规范:\n\n选择你要提交的类型",
     scope: '\n选择一个scope (可选):',
-    // used if allowCustomScopes is true
     customScope: '请输入自定义的scope:',
     subject: '填写简短的变更描述:\n',
     body: '填写详细的变更描述 (可选):\n',
@@ -52,14 +51,14 @@ module.exports = {
   },
 
   // 允许自定义scope
-  allowCustomScopes: true,
+  allowCustomScopes: false,
   // 设置type选择了feat 或 fix才询问breaking message
   allowBreakingChanges: ['feat', 'fix'],
   // 跳过要询问的步骤
   skipQuestions: ['footer'],
 
   // 限制简述的长度
-  subjectLimit: 20,
+  subjectLimit: 120,
   // breaklineChar: '|', // It is supported for fields body and footer.
   // footerPrefix : 'ISSUES CLOSED:'
   // askForBreakingChangeFirst : true, // default is false

@@ -34,6 +34,8 @@
     "@babel/plugin-transform-runtime": "^7.16.4",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-typescript": "^7.16.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "@vue/compiler-sfc": "^3.2.24",
@@ -60,7 +62,10 @@
     "webpack-merge": "^5.8.0"
   },
   "lint-staged": {
-    "*.{vue,js,ts}": "eslint --fix"
+    "*.{vue,js,ts}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "config": {
     "commitizen": {
